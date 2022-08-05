@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './reset.scss';
+@import './fonts.scss';
+
+:root {
+  // setup your variables
+  // DO NOT call color variables as color name (e.g. red-color, green-color, blue-color)
+
+  --primary-color: brown;
+  --secondary-color: lightblue;
+  --error-color: red;
+
+  --primary-text-color: black;
+  --secondary-text-color: gray;
+
+  --h1-font-size: 21px;
+  --h1-line-height: 25px;
+  --h2-font-size: 16px;
+  --h2-line-height: 20px;
+
+  --paragraph-font-size: 14px;
+  --paragraph-line-height: 17px;
+  --caption-font-size: 12px;
+  --caption-line-height: 16px;
+  --small-caption-font-size: 11px;
+  --small-caption-line-height: 14px;
+}
+
+body {
+  width: 100%;
+  min-width: 1180px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: var(--paragraph-font-size);
+  color: var(--primary-text-color);
+}

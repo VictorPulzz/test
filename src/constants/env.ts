@@ -1,0 +1,2 @@
+export const API_URL = process.env.API_URL as string;
+export const REFRESH_TOKEN_URL = '/auth/token/refresh';
